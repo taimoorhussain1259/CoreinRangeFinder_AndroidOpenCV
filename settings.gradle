@@ -1,0 +1,3 @@
+rootProject.name = "Songe Cube"
+include ':app'
+include ':opencv'

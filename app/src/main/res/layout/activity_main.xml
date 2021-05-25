@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <org.opencv.android.JavaCameraView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        android:id="@+id/textureView"
+        opencv:show_fps="true"
+        opencv:camera_id="any" />
+
+    <SeekBar
+        android:id="@+id/rlower"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:max="255"
+        android:min="0"
+        android:progress="0" />
+
+    <SeekBar
+        android:id="@+id/glower"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="40dp"
+        android:max="255"
+        android:min="0"
+        android:progress="0" />
+
+    <SeekBar
+        android:id="@+id/blower"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="80dp"
+        android:max="255"
+        android:min="0"
+        android:progress="0" />
+
+    <SeekBar
+        android:id="@+id/rupper"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="120dp"
+        android:max="255"
+        android:min="0"
+        android:progress="0" />
+
+    <SeekBar
+        android:id="@+id/gupper"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="160dp"
+        android:max="255"
+        android:min="0"
+        android:progress="0" />
+
+    <SeekBar
+        android:id="@+id/bupper"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="200dp"
+        android:max="255"
+        android:min="0"
+        android:progress="0" />
+
+    <Button
+        android:id="@+id/btntoast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="650dp"
+        android:text="Show" />
+
+</FrameLayout>
+
